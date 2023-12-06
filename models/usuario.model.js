@@ -42,7 +42,8 @@ const UsuarioSchema  = Schema ({
 
 //sobreescribo el metodo para excluir el password y el _v del modelo al momento de imprimirlo
 UsuarioSchema.methods.toJSON = function(){
-    const {__v,password,...usuario} = this.toObject();
+    const {__v,password,_id,...usuario} = this.toObject();
+    usuario.uid = _id;
     return usuario;
 }
 
