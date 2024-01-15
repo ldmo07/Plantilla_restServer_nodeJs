@@ -1,1 +1,5 @@
 node_modules/
+
+#descomnetar si quiero que no se suban estos archivos a mi repositorio de git
+#uploads/productos/**.*
+#uploads/usuarios/**.*s
